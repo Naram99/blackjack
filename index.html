@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="card.cls.js"></script>
+    <script src="deck.cls.js"></script>
+    <script src="player.cls.js"></script>
+    <script src="game.cls.js"></script>
+    <title>Blackjack</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Blackjack</h1>
+        <div class="input-container">
+            <label for="numberOfPlayers">Number of players: </label>
+            <input 
+                type="number" 
+                id="numberOfPlayers" 
+                name="numberOfPlayers"
+                value="1"
+                min="1" 
+                max="7" />
+        </div>
+        <div class="input-container">
+            <label for="numberOfDecks">Number of decks: </label>
+            <input 
+                type="number" 
+                id="numberOfDecks" 
+                name="numberOfDecks"
+                value="1"
+                min="1" 
+                max="8" />
+        </div>
+        <div class="input-container">
+            <label for="holecard">Holecard</label>
+            <input 
+                type="checkbox" 
+                id="holecard"
+                name="holecard"
+                value="true" /> 
+        </div>
+        <button class="main-btn" id="startBtn">Start game</button>
+        <button class="main-btn" id="rulesBtn">Rules</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
